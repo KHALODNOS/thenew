@@ -51,8 +51,40 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
 
     <style>
+            .whatsapp-float {
+        position: fixed;
+        right: 18px;
+        bottom: 18px;
+        width: 56px;
+        height: 56px;
+        background: #25d366;
+        border-radius: 50%;
+        display: grid;
+        place-items: center;
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+        z-index: 9999;
+        transition: transform 0.2s ease, box-shadow 0.2s ease;
+        text-decoration: none;
+        font-size: 20px;
+      }
+      .whatsapp-float:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 10px 24px rgba(0, 0, 0, 0.24);
+      }
+      @media (max-width: 640px) {
+        .whatsapp-float {
+          right: 14px;
+          bottom: 14px;
+          width: 52px;
+          height: 52px;
+        }
+      }
       .gf {
         display: none;
       }
@@ -77,6 +109,16 @@
   </head>
 
   <body class="wide-layout">
+       <a
+      href="https://wa.me/212600000000?text=Salam%20bghit%20aktar%20👋"
+      class="whatsapp-float"
+      target="_blank"
+      rel="noopener"
+      aria-label="WhatsApp chat"
+      title="WhatsApp"
+    >
+      <i class="fab fa-whatsapp fa-lg" style="color: white"></i>
+    </a>
     <div id="wrapper" class="wrapper-container">
       <!-- Header Section -->
       <header id="header" class="header-5">
@@ -881,4 +923,5 @@
     </script>
   </body>
 </html>
+
 
