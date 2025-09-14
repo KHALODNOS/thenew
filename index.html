@@ -56,6 +56,25 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
     />
+
+    <!-- Event snippet for Page view conversion page
+In your html page, add the snippet and call gtag_report_conversion when someone clicks on the chosen link or button. -->
+<script>
+function gtag_report_conversion(url) {
+  var callback = function () {
+    if (typeof(url) != 'undefined') {
+      window.location = url;
+    }
+  };
+  gtag('event', 'conversion', {
+      'send_to': 'AW-783958659/3lBOCIjz15obEIOF6fUC',
+      'value': 1.0,
+      'currency': 'MAD',
+      'event_callback': callback
+  });
+  return false;
+}
+</script>
     <style>
             .whatsapp-float {
         position: fixed;
@@ -219,9 +238,9 @@
                       Email:
                       <a
                         href="mailto:
-                      comapnymagic@gmail.com"
+                      radiyossaf09@gmail.com"
                       >
-                        comapnymagic@gmail.comm</a
+                        radiyossaf09@gmail.com</a
                       >
                     </div>
                   </li>
@@ -966,8 +985,8 @@
                       style="font-size: 1rem; color: #fff; margin: 0 0.6rem"
                       class="fa fa-envelope"
                     ></i>
-                    <a href="mailto:comapnymagic@gmail.com"
-                      >comapnymagic@gmail.com</a
+                    <a href="mailto:radiyossaf09@gmail.com"
+                      >radiyossaf09@gmail.com</a
                     >
                   </li>
                 </ul>
@@ -1098,6 +1117,7 @@
     </script>
   </body>
 </html>
+
 
 
 
